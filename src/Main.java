@@ -1,11 +1,16 @@
+import java.util.Scanner;
 public class Main
     {
     public static void main(String[] args)
     {
         double num1, num2, ans;
         char choose;
-        num1 = 5.0; num2 = 9.0;
-        choose = '+';
+        Scanner reader = new Scanner(System.in);
+        System.out.print("Enter num1 and num2: ");
+        num1 = reader.nextDouble();
+        num2 = reader.nextDouble();
+        System.out.print("\nEnter operator. Operators available (+, -, *, /): ");
+        choose = reader.next().charAt(0);
         switch(choose){
 
             //Sum
